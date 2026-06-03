@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-family: 'DM Sans', sans-serif;
+    background: #f6f5f2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #ececec;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cardHeader h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.badge.pending {
+    background: #fff7ed;
+    color: #c05621;
+}
+
+.badge.preparing {
+    background: #fefce8;
+    color: #a16207;
+}
+
+.badge.completed {
+    background: #f0fdf4;
+    color: #166534;
+}
+
+.metaGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #f6f5f2;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 24px;
+}
+
+.label {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.value {
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.stepper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.stepLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #bbb;
+    flex-shrink: 0;
+}
+
+.dot.done {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.dot.active {
+    border-color: #222;
+    color: #222;
+    box-shadow: 0 0 0 3px #e8e8e8;
+}
+
+.line {
+    width: 2px;
+    height: 26px;
+    background: #e0e0e0;
+    margin: 3px 0;
+}
+
+.line.done {
+    background: #222;
+}
+
+.stepName {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #bbb;
+    padding-top: 5px;
+}
+
+.stepName.done {
+    color: #888;
+}
+
+.stepName.active {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* ── items section ── */
+
+.itemList {
+    border-top: 1px solid #ececec;
+    padding-top: 16px;
+}
+
+.sectionTitle {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.itemName {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.itemUnit {
+    font-size: 11.5px;
+    color: #aaa;
+}
+
+.itemRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.qty {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.itemTotal {
+    font-size: 13.5px;
+    font-weight: 600;
+    min-width: 56px;
+    text-align: right;
+    color: #1a1a1a;
+}
+
+/* ── price summary ── */
+
+.priceSummary {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceLabel,
+.priceValue {
+    font-size: 13px;
+    color: #888;
+}
+
+.totalRow {
+    border-top: 1px solid #ececec;
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+.totalLabel {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.totalValue {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
